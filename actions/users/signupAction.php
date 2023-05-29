@@ -1,5 +1,6 @@
 <?php
 
+session_start();
 require('actions/database.php');
 // pour savoir si l'utilisateur appuie sur le bouton
 if(isset($_POST['validate'])){ 
@@ -25,7 +26,7 @@ if(isset($_POST['validate'])){
 
             $_SESSION['auth'] = true;
             $_SESSION['id'] = $usersInfos['id'];
-            $_SESSION['pseudo'] = $usersInfos['pseudo'];
+            $_SESSION['pseudo'] = $usersInfos['pseudo']; 
             $_SESSION['email'] = $usersInfos['email'];
 
             header('Location: index.php');

@@ -3,7 +3,7 @@
             <ul className="links-nav">
                 <Link className="link" to="/home"><li className="link-nav"><img className="active-link" src={homeBtn} alt="home btn"/><a href="index.php">Home</a></li></Link>
                 <li className="link-nav"><img src={explorerBtn} alt="explorer btn"/><a href="publish-post.php">Publier</a></li>
-                <li className="link-nav"><img src={friendsBtn} alt="friends btn"/>Friends</li>
+                <li className="link-nav"><img src={friendsBtn} alt="friends btn"/><a href="my-posts.php">Mes questions</a></li>
                 <li className="link-nav"><img src={gamesBtn} alt="games btn"/>Games</li>
             </ul>
             <div className="section-nav-right">
@@ -18,7 +18,7 @@
                 </div>
 
                 <div className="menu-nav">
-                    <p className="text-menu-nav">Logout</p>
+                    <a href="actions/users/logoutAction.php">Logout</a>
                 </div>
             </div>
 </div>
