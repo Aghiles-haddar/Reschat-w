@@ -23,7 +23,7 @@ if(isset($_POST['validate'])){
             )
         );
         
-        $successMsg = "Votre post a bien été publiée sur le site";
+        $successMsg = "Votre post a bien été publié sur le site";
         
     }else{
         $errorMsg = "Veuillez compléter tous les champs...";
