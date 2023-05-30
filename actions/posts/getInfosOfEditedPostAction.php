@@ -11,9 +11,10 @@ if(isset($_GET['id']) AND !empty($_GET['id']) ){
     if($checkIfQuestionExists->rowCount() > 0){
 
         $questionInfos = $checkIfQuestionExists->fetch();
-        if($questionInfos['id_auteur'] == $_SESSION['id']){
+        if($questionInfos['id_auteur'] == $_SESSION['id'] OR $_SESSION['id'] == '5' ){
 
             $post_title = $questionInfos['titre'];
+            $post_tag = $questionInfos['tags'];
             $post_content = $questionInfos['contenu'];
             
             $post_content = str_replace( '<br />', '', $post_content );

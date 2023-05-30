@@ -18,6 +18,7 @@
         ?>
             <div className="middle-second-right">
                 <h1 className="middle-second-h1" > <?php echo $posts['titre']; ?> </h1>
+                <p className="middle-second-p" > <?php echo $posts['tags'] ?> </p>
                 <p className="middle-second-p" > <?php echo $posts['contenu'] ?> </p>
                 <div className="middle-second-bottom">
                         
@@ -28,9 +29,9 @@
                                 <p className="profil-info-p"><?php echo $posts['date_publication'] ?></p>
                             </div>
                     </div>
-                    <a href="">Acceder au poste</a>
+                    <a href="article.php?id=<?php echo $posts['id'] ?>">Acceder au post</a>
                     <a href="edit-posts.php?id=<?php echo $posts['id'] ?>">Modifier le post</a> 
-                    <a href="edit-posts.php?id=<?php echo $posts['id'] ?>">Supprimer le post</a> 
+                    <a href="actions/posts/deletePostsActions.php?id=<?php echo $posts['id'] ?>">Supprimer le post</a> 
                 </div>
             </div>
         <?php

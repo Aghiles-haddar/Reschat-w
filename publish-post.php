@@ -15,6 +15,8 @@
              ?>
         <label for="">Titre du post</label>
         <input type="text" name="title"/>
+        <label for="">Tags du post</label>
+        <input type="text" name="tag"/>
         <label for="">Le post</label>
         <textarea name="content"></textarea>
         <button type="submit" class="btn-form" name="validate" >Poster</button>

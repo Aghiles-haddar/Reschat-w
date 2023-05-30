@@ -20,6 +20,8 @@ require('actions/posts/editPostsAction.php');
         <form className="form-signup" method="POST">
             <label for="">Titre du post</label>
             <input type="text" name="title" value="<?= $post_title ?>" />
+            <label for="">Tag du post</label>
+            <input type="text" name="tag" value="<?= $post_tag ?>" />
             <label for="">Le post</label>
             <textarea name="content"> <?= $post_content ?> </textarea>
             <button type="submit" class="btn-form" name="validate" >Modifier le post</button>
